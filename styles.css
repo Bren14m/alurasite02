@@ -1,0 +1,179 @@
+
+body {
+    font-family: 'Dancing Script', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF8E1;
+    color: #333;
+}
+
+header {
+    background-color: #ffcccb;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #d84b3a;
+}
+
+.header-icons {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.icon {
+    text-decoration: none;
+    color: #333;
+    margin-left: 20px;
+    font-size: 24px;
+    transition: color 0.3s;
+}
+
+.icon:hover {
+    color: #d84b3a;
+}
+
+.side-menu {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+.side-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.side-menu ul li {
+    padding: 15px;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.side-menu ul li a:hover {
+    background-color: #d84b3a;
+    color: white;
+}
+
+/* Estilo do Carrossel */
+.carrossel-container {
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.swiper-slide img {
+    width: 30%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.swiper-slide img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 300px) {
+    .swiper-slide img {
+        width: 100%;
+    }
+}
+
+
+
+.swiper-slide p {
+    font-size: 16px;
+    color: #666;
+}
+
+
+#receitas {
+    text-align: left;
+    padding: 40px;
+    background-color: #faf9f9;
+}
+
+.receita {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+
+.receita img {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 8px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.receita img:hover {
+    transform: scale(1.05);
+}
+
+.receita .descricao h3 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+.receita .descricao p {
+    font-size: 14px;
+    color: #666;
+    margin: 5px 0;
+    line-height: 1.6;
+}
+
+
+ 
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px; 
+    background-color: #d84b3a; 
+    color: white; 
+    font-size: 18px; 
+    font-weight: bold; 
+    text-decoration: none; 
+    border-radius: 8px; 
+    text-align: center; 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
+    margin-top: 20px; 
+}
+
+.cta-button:hover {
+    background-color: #ff9a8b; 
+    transform: scale(1.05); 
+}
+
+.cta-button:active {
+    background-color: #c44f34; /* Cor de fundo quando o botão é pressionado */
+}
